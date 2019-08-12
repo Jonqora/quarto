@@ -167,10 +167,12 @@ function checkWinConditions(newSpot) { // newSpot format e.g. 'A2'
 // Event listeners for choosing pieces
 for (i = 0; i < startingPieces.length; i++) {
   let elem = startingPieces[i];
+  elem.used = false;
   elem.addEventListener('click', function () {
-    if (gamePhase === 'choose') {
+    if (gamePhase === 'choose' && elem.used === false) {
       // move the node to the active spot
       activeSpot.appendChild(elem);
+      elem.used = true;
 
       // change phase and player
       changePlayer();
@@ -219,6 +221,7 @@ banner.addEventListener('click', function () {
   if (gamePhase === 'win' || gamePhase === 'draw') {
     // replace the pieces to the inactive area
     for (let piece of startingPieces) {
+      piece.used = false;
       inactiveSpot.appendChild(piece);
     }
 
