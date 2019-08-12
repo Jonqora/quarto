@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quarto! Game</title>
+    <link href="quarto.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <meta charset="utf-8">
+    <meta property="og:title" content="Ellen Lloyd | Quarto! Game" />
+    <meta property="og:description" content="Hotseat web client for playing Quarto!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonqora.github.io/quarto">
+    <meta property="og:image" content="images/og.png" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Quarto!</h1>
+    </header>
+
+    <div class="bannerspot">
+      <div class="banner">Player A, choose a piece!</div>
+    </div>
+
+    <div class="game">
+      <div class="gameboard">
+        <div class="boardspot" id="A1"></div>
+        <div class="boardspot" id="A2"></div>
+        <div class="boardspot" id="A3"></div>
+        <div class="boardspot" id="A4"></div>
+        <div class="boardspot" id="B1"></div>
+        <div class="boardspot" id="B2"></div>
+        <div class="boardspot" id="B3"></div>
+        <div class="boardspot" id="B4"></div>
+        <div class="boardspot" id="C1"></div>
+        <div class="boardspot" id="C2"></div>
+        <div class="boardspot" id="C3"></div>
+        <div class="boardspot" id="C4"></div>
+        <div class="boardspot" id="D1"></div>
+        <div class="boardspot" id="D2"></div>
+        <div class="boardspot" id="D3"></div>
+        <div class="boardspot" id="D4"></div>
+      </div>
+      <div class="gamepieces">
+          <div class="active">
+            <div id="activespot"></div>
+          </div>
+        <div class="inactive">
+          <img class="piece" id="p0000" src="images/p0000.png" />
+          <img class="piece" id="p0001" src="images/p0001.png" />
+          <img class="piece" id="p0010" src="images/p0010.png" />
+          <img class="piece" id="p0011" src="images/p0011.png" />
+          <img class="piece" id="p0100" src="images/p0100.png" />
+          <img class="piece" id="p0101" src="images/p0101.png" />
+          <img class="piece" id="p0110" src="images/p0110.png" />
+          <img class="piece" id="p0111" src="images/p0111.png" />
+          <img class="piece" id="p1000" src="images/p1000.png" />
+          <img class="piece" id="p1001" src="images/p1001.png" />
+          <img class="piece" id="p1010" src="images/p1010.png" />
+          <img class="piece" id="p1011" src="images/p1011.png" />
+          <img class="piece" id="p1100" src="images/p1100.png" />
+          <img class="piece" id="p1101" src="images/p1101.png" />
+          <img class="piece" id="p1110" src="images/p1110.png" />
+          <img class="piece" id="p1111" src="images/p1111.png" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <ol>
+          <li>Click on the board to place the active piece.</li>
+          <li>Choose a new piece for your opponent to place.</li>
+          <li>To win: finish a line that shares one or more attributes.</li>
+        </ol>
+      </div>
+      <div>
+        <p>Created by Ellen Lloyd. Visit <a href="http://ellenlloyd.ca">ellenlloyd.ca</a></p>
+      </div>
+    </footer>
+
+  <script src="quarto.js" type=""></script>
+  </body>
+</html>

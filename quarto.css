@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: "Tahoma", "Arial", sans-serif;
+}
+
+header {
+   font-family: "Times New Roman", serif;
+}
+
+header, footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+a:active {
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+
+.game, .bannerspot {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.banner {
+  width: 100%;
+  background-color: lightgreen;
+  margin-bottom: 1em;
+  padding: 0.75em;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.gameboard {
+  box-sizing: content-box;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-right: 25px;
+  padding: 1em;
+  border: 4px solid orchid;
+  border-radius: 1em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.piece {
+  width: 40px;
+  margin: 5px 2px 5px 2px;
+}
+
+.boardspot {
+  width: 25%;
+  height: 25%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.gamepieces {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+#activespot {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.active {
+  box-sizing: content-box;
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  padding: 0.5em;
+  border: 4px solid orchid;
+  border-radius: 1em;
+}
+
+.inactive {
+  box-sizing: border-box;
+  background-color: white;
+  width: 300px;
+  height: 225px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .game {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .gameboard {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .gamepieces {
+    flex-flow: row;
+  }
+  .active {
+    margin-right: 25px;
+  }
+  .inactive {
+    width: 200px;
+    height: 300px;
+  }
+
+}
