@@ -101,7 +101,6 @@ a:visited {
   box-sizing: border-box;
   background-color: white;
   width: 300px;
-  height: 2px;
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -130,7 +129,6 @@ a:visited {
   }
   .inactive {
     width: 200px;
-    height: 280px;
   }
 
 }
