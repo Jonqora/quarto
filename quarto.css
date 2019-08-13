@@ -43,8 +43,8 @@ a:visited {
 
 .gameboard {
   box-sizing: content-box;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   background-color: white;
   margin-right: 25px;
   padding: 1em;
@@ -56,7 +56,7 @@ a:visited {
 
 .piece {
   width: 40px;
-  margin: 5px 2px 5px 2px;
+  margin: 2px 2px 2px 2px;
 }
 
 .boardspot {
@@ -101,7 +101,7 @@ a:visited {
   box-sizing: border-box;
   background-color: white;
   width: 300px;
-  height: 225px;
+  height: 2px;
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -126,11 +126,11 @@ a:visited {
     flex-flow: row;
   }
   .active {
-    margin-right: 25px;
+    margin-right: 20px;
   }
   .inactive {
     width: 200px;
-    height: 300px;
+    height: 280px;
   }
 
 }
