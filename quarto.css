@@ -108,6 +108,31 @@ a:visited {
   align-items: baseline;
 }
 
+.activesection {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.controls {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 0 0 0.5em;
+}
+
+.button {
+  background-color: lightpink;
+  border: 4px solid orchid;
+  border-radius: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: small;
+  width: 75px;
+  color: black;
+  padding: 0.12em 0.5em 0.12em 0.5em;
+  margin: 0.25em 0 0.25em 0;
+  box-sizing: content-box;
+}
 
 @media only screen and (max-width: 768px) {
   .game {
@@ -130,5 +155,13 @@ a:visited {
   .inactive {
     width: 200px;
   }
-
+  .activesection {
+    flex-flow: column;
+  }
+  .button {
+    margin: 1em 0 0 0;
+  }
+  .controls, {
+    padding: 0;
+  }
 }
